@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nand · Portfolio</title>
+  <meta name="description" content="Harianda Surbakti (Nand). A Gen Z product manager who’s chill but gets things done.">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:title" content="Nand · Portfolio">
+  <meta property="og:description" content="A Gen Z product manager who’s chill but gets things done.">
+  <meta property="og:image" content="https://nanda-harianda.github.io/assets/ai/hero.jpg">
+  <meta property="og:url" content="https://nanda-harianda.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230e0e0e%22/%3E%3Ctext x=%2212%22 y=%2246%22 font-family=%22Arial Black,Arial%22 font-weight=%22900%22 font-size=%2240%22 fill=%22%23ffd43b%22%3En%3C/text%3E%3Ccircle cx=%2250%22 cy=%2242%22 r=%225%22 fill=%22%23ff6fae%22/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
+    // Safety net: if the motion scripts never start, show everything.
+    setTimeout(() => { if (!document.documentElement.classList.contains("motion-ready")) document.documentElement.classList.remove("motion"); }, 4000);
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Nand, back to top">nand<span>.</span></a>
+      <div class="nav-right">
+        <nav aria-label="Sections">
+          <ul>
+            <li class="hide-sm"><a class="link" href="#about" data-i18n="nav.about">About</a></li>
+            <li><a class="link" href="#work" data-i18n="nav.work">Work</a></li>
+            <li class="hide-sm"><a class="link" href="#life" data-i18n="nav.life">Life</a></li>
+            <li><a class="link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="id" aria-pressed="false">ID</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero + globe -->
+    <section class="hero" id="top">
+      <div class="hero-blob y" aria-hidden="true"></div>
+      <div class="hero-blob p" aria-hidden="true"></div>
+      <div class="wrap">
+        <div>
+          <h1 data-i18n="hero.h1"><span class="line"><span>Hi, I’m</span></span><span class="line"><span class="hl-y">Nand.</span></span></h1>
+          <p class="sub" data-i18n="hero.sub">Gen Z product manager for consumer apps: onboarding, growth, retention. Chill, but things get done.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="#work"><span data-i18n="hero.cta1">See what I’ve worked on</span> <i class="ph ph-arrow-down-right" aria-hidden="true"></i></a>
+            <a class="btn btn-ghost" href="#about" data-i18n="hero.cta2">Get to know me</a>
+          </div>
+        </div>
+
+        <div class="globe-wrap">
+          <div class="globe" id="globe" role="img" aria-label="A rotating globe of illustrations of Nand running, playing guitar and keyboard, working at a whiteboard, hiking with friends, at a community dinner, and reading with an iced coffee" data-i18n-aria="globe.aria">
+            <div class="globe-inner" id="globe-inner">
+              <div class="gcard"><img src="assets/ai/run.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard word y" data-i18n="g.w1">PM</div>
+              <div class="gcard"><img src="assets/ai/guitar.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard"><img src="assets/ai/work.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard word k" data-i18n="g.w2">Runner<br>(slow)</div>
+              <div class="gcard"><img src="assets/ai/hike.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard"><img src="assets/ai/keys.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard word p" data-i18n="g.w3">Always<br>curious</div>
+              <div class="gcard"><img src="assets/ai/community.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard"><img src="assets/ai/metime.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard word y" data-i18n="g.w4">Keys &amp;<br>strings</div>
+              <div class="gcard"><img src="assets/ai/hero.jpg" alt="" width="900" height="1117"></div>
+              <div class="gcard word k" data-i18n="g.w5">Weekend<br>communities</div>
+              <div class="gcard word p" data-i18n="g.w6">Gets things<br>done</div>
+            </div>
+          </div>
+          <p class="globe-caption"><i class="ph ph-hand-grabbing" aria-hidden="true"></i><span data-i18n="globe.caption">Same guy, different day. Drag or use arrow keys to spin.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- One marquee, speed reacts to scroll -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee">
+        <span data-i18n="mq.1">Product Manager</span><span data-i18n="mq.2">Slow runner</span><span data-i18n="mq.3">Keyboard &amp; guitar</span><span data-i18n="mq.4">Community hopper</span><span data-i18n="mq.5">Asks a lot of questions</span><span data-i18n="mq.6">Iced coffee person</span>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap grid">
+        <div>
+          <h2 id="about-title" class="split-words" data-i18n="about.h">Weekdays, I fix what slows people down in an app. Weekends, I meet people I haven’t met yet.</h2>
+          <p class="p" data-reveal data-i18n="about.p">I’m an Associate Product Manager at Fore Coffee, working on growth and retention for the consumer app. Before this I was at Glints, with PM internships at Aruna and Trans Retail. I learn by doing, which is how I ended up with a keyboard, a guitar and a 5 km habit.</p>
+        </div>
+        <figure class="real" data-reveal>
+          <div class="photo sticker">
+            <span class="blob b1" aria-hidden="true"></span><span class="blob b2" aria-hidden="true"></span>
+            <span class="spark s1" aria-hidden="true"></span><span class="spark s2" aria-hidden="true"></span><span class="spark s3" aria-hidden="true"></span>
+            <img src="assets/photos/portrait-cut.png" alt="Photo of Nand smiling, in a black shirt" data-i18n-alt="alt.real" width="565" height="900" loading="lazy">
+          </div>
+          <figcaption class="note" data-i18n="about.realnote">The drawings are AI. This one is the real me, for reference.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Work: horizontal scroll -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap work-head">
+        <div>
+          <h2 class="section-title" id="work-title" data-reveal data-i18n="work.h">Two shipped, one brewing, one side project.</h2>
+          <p class="section-sub" data-reveal data-i18n="work.sub">Each story covers what I decided, who I worked with and what happened next.</p>
+        </div>
+      </div>
+      <div class="work-pin" id="work-pin">
+        <div class="work-track" id="work-track">
+          <a class="case case--y" href="work/glints.html">
+            <div>
+              <div class="kicker" data-i18n="case.glints.k">Glints · Jun 2024 to Jul 2025</div>
+              <h3 data-i18n="case.glints.t">Fewer steps from opening the app to applying.</h3>
+              <p data-i18n="case.glints.b">Shorter onboarding, suggested roles and One-Tap Apply on the candidate platform.</p>
+            </div>
+            <div class="stats">
+              <div class="stat"><b>90%</b><span data-i18n="case.glints.s1">onboarding completion</span></div>
+              <div class="stat"><b>+8.6%</b><span data-i18n="case.glints.s2">1-day open-to-apply</span></div>
+              <div class="stat"><b>+32%</b><span data-i18n="case.glints.s3">applications per applicant</span></div>
+            </div>
+            <span class="more"><span data-i18n="more">Read the story</span> <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+
+          <a class="case" href="work/fore-growth.html">
+            <div>
+              <div class="kicker" data-i18n="case.fore.k">Fore Coffee · Aug 2025 to now</div>
+              <h3 data-i18n="case.fore.t">Getting new users to stay, for less.</h3>
+              <p data-i18n="case.fore.b">Reworked new-user vouchers with the promo team, cut OTP sign-in cost and connected TikTok Dining Go to our POS.</p>
+            </div>
+            <span class="more"><span data-i18n="more">Read the story</span> <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+
+          <a class="case case--p" href="work/eta.html">
+            <div>
+              <div class="kicker"><span data-i18n="case.eta.k">Fore Coffee</span> <span class="tag" data-i18n="inprogress">In progress</span></div>
+              <h3 data-i18n="case.eta.t">What should the app say while your coffee is being made?</h3>
+              <p data-i18n="case.eta.b">I’m shaping the product side of a ready-time estimate. The BI team builds the model. Not launched yet.</p>
+            </div>
+            <span class="more"><span data-i18n="more">Read the story</span> <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+
+          <a class="case case--line" href="work/nandai.html">
+            <div>
+              <div class="kicker"><span data-i18n="case.nandai.k">Side project</span> <span class="tag" data-i18n="ongoing">Ongoing</span></div>
+              <h3 data-i18n="case.nandai.t">NandAI, my two-assistant setup with house rules.</h3>
+              <p data-i18n="case.nandai.b">Claude and Codex share one memory and my rules. Evidence first, flag uncertainty, send nothing without my OK.</p>
+            </div>
+            <img class="art" src="assets/ai/work.jpg" alt="" width="900" height="900" loading="lazy">
+            <span class="more"><span data-i18n="more">Read the story</span> <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Life -->
+    <section class="life" id="life" aria-labelledby="life-title">
+      <div class="wrap">
+        <h2 class="section-title" id="life-title" data-reveal data-i18n="life.h">What my weekends look like</h2>
+        <p class="section-sub" data-reveal data-i18n="life.sub">Most of it involves meeting strangers or getting a bit sweaty.</p>
+        <div class="life-grid">
+          <article class="lcard l-run" data-reveal>
+            <div class="img"><img src="assets/ai/run.jpg" alt="Illustration of Nand jogging" data-i18n-alt="alt.run" width="900" height="900" loading="lazy" data-parallax="-10"></div>
+            <div class="txt"><h3 data-i18n="life.run.t">Gym and running</h3><p data-i18n="life.run.p">Around 5 km, never fast. Slow, but I show up.</p></div>
+          </article>
+          <article class="lcard l-music" data-reveal>
+            <div class="img"><img src="assets/ai/guitar.jpg" alt="Illustration of Nand playing guitar" data-i18n-alt="alt.guitar" width="900" height="900" loading="lazy" data-parallax="-10"></div>
+            <div class="txt"><h3 data-i18n="life.music.t">Keys and guitar</h3><p data-i18n="life.music.p">I play both. Pop songs only, and only the ones with lyrics worth underlining.</p></div>
+          </article>
+          <article class="lcard l-community" data-reveal>
+            <div class="img"><img src="assets/ai/community.jpg" alt="Illustration of Nand at a community dinner" data-i18n-alt="alt.community" width="900" height="900" loading="lazy" data-parallax="-10"></div>
+            <div class="txt"><h3 data-i18n="life.community.t">New communities</h3><p data-i18n="life.community.p">Most weekends I walk into a group where I know zero people. It’s how I meet people who see things differently.</p></div>
+          </article>
+          <article class="lcard l-metime" data-reveal>
+            <div class="img"><img src="assets/ai/metime.jpg" alt="Illustration of Nand reading with an iced coffee" data-i18n-alt="alt.metime" width="900" height="900" loading="lazy" data-parallax="-10"></div>
+            <div class="txt"><h3 data-i18n="life.metime.t">Me time</h3><p data-i18n="life.metime.p">A book and an iced coffee. Yes, I know where I work.</p></div>
+          </article>
+          <article class="lcard l-curious" data-reveal>
+            <div class="txt">
+              <div><h3 data-i18n="life.curious.t">Rabbit holes</h3><p data-i18n="life.curious.p">And whatever AI tool came out this week.</p></div>
+              <ul class="chips" aria-label="Interests" data-i18n-aria="aria.interests">
+                <li data-i18n="c.1">Psychology</li><li data-i18n="c.2">History</li><li data-i18n="c.3">Cooking</li><li data-i18n="c.4">Fashion</li><li data-i18n="c.5">AI tools</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How I work -->
+    <section class="how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 class="section-title" id="how-title" data-reveal data-i18n="how.h">How I work with a team</h2>
+        <div class="principles">
+          <div class="principle">
+            <i class="ph ph-signpost" aria-hidden="true"></i>
+            <div><h3 data-i18n="how.1t">Ask what we’re deciding first.</h3><p data-i18n="how.1p">Before I open a dashboard, I want to know which decision the numbers are for.</p></div>
+          </div>
+          <div class="principle">
+            <i class="ph ph-flask" aria-hidden="true"></i>
+            <div><h3 data-i18n="how.2t">Check the real screen.</h3><p data-i18n="how.2p">A backend event can’t tell me what the customer saw, so I open the app and look.</p></div>
+          </div>
+          <div class="principle">
+            <i class="ph ph-chat-circle-dots" aria-hidden="true"></i>
+            <div><h3 data-i18n="how.3t">Say when I’m not sure.</h3><p data-i18n="how.3p">I’d rather flag a gap early than surprise the team at launch.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Path -->
+    <section class="path" id="path" aria-labelledby="path-title">
+      <div class="wrap">
+        <h2 class="section-title" id="path-title" data-reveal data-i18n="path.h">Where I’ve been so far</h2>
+        <ol class="tracks">
+          <li data-reveal><span class="when">2025 to <span data-i18n="now">now</span></span><span class="co">Fore Coffee<span class="role">Associate Product Manager</span></span><span class="what" data-i18n="path.1">Consumer app. Growth, retention and the end-to-end experience.</span></li>
+          <li data-reveal><span class="when">2024 to 2025</span><span class="co">Glints<span class="role">Associate Product Manager</span></span><span class="what" data-i18n="path.2">Candidate platform. Onboarding and the path to applying.</span></li>
+          <li data-reveal><span class="when">2024</span><span class="co">Aruna<span class="role">Product Manager Intern</span></span><span class="what" data-i18n="path.3">Warehouse operations. Stakeholder discovery and data checkers.</span></li>
+          <li data-reveal><span class="when">2023</span><span class="co">Trans Retail Indonesia<span class="role">Product Manager Intern</span></span><span class="what" data-i18n="path.4">Vendor returns and customer management systems.</span></li>
+        </ol>
+        <p class="edu" data-reveal data-i18n="path.edu">Information Technology, State Polytechnic of Jakarta (2020 to 2024). Software Engineering, CCIT Universitas Indonesia (2020 to 2022).</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title" class="contact-big" data-i18n="contact.h">Say <span class="hl-p">hi.</span></h2>
+        <p data-reveal data-i18n="contact.p">Hiring a PM, building something, or know a community I should try next? Email me.</p>
+        <div class="ctas" data-reveal>
+          <a class="btn btn-primary" href="mailto:harianda.work@gmail.com"><span data-i18n="contact.cta">Email me</span> <i class="ph ph-envelope-simple" aria-hidden="true"></i></a>
+          <a class="btn btn-ghost" href="https://docs.google.com/document/d/1dzWVrCwW7usg82A4IKuL0e9oALPbW0ZH/edit?usp=sharing" rel="noopener" target="_blank"><span data-i18n="contact.cv">See my CV</span> <i class="ph ph-file-text" aria-hidden="true"></i></a>
+          <a class="plain" href="https://www.linkedin.com/in/harianda/" rel="noopener" target="_blank">LinkedIn <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Harianda Surbakti</span>
+      <span data-i18n="footer">Illustrations made with AI. Photo and words are mine.</span>
+    </div>
+  </footer>
+
+  <script type="application/json" id="i18n-en-extra">{}</script>
+  <script type="application/json" id="i18n-id">
+{
+ "skip": "Langsung ke konten",
+ "nav.about": "Tentang",
+ "nav.work": "Kerjaan",
+ "nav.life": "Keseharian",
+ "nav.contact": "Kontak",
+ "hero.h1": "<span class=\"line\"><span>Halo, aku</span></span><span class=\"line\"><span class=\"hl-y\">Nand.</span></span>",
+ "hero.sub": "Product manager Gen Z untuk app konsumen: onboarding, growth, retention. Santai, tapi kerjaan beres.",
+ "hero.cta1": "Lihat kerjaanku",
+ "hero.cta2": "Kenalan dulu",
+ "globe.caption": "Orangnya sama, harinya beda. Geser atau pakai panah buat muter.",
+ "globe.aria": "Globe berputar berisi ilustrasi Nand lagi lari, main gitar dan keyboard, kerja di depan whiteboard, hiking bareng teman, makan bareng komunitas, dan baca buku sambil ngopi",
+ "g.w1": "PM",
+ "g.w2": "Pelari<br>(santai)",
+ "g.w3": "Selalu<br>kepo",
+ "g.w4": "Keyboard<br>&amp; gitar",
+ "g.w5": "Komunitas<br>weekend",
+ "g.w6": "Kerjaan<br>beres",
+ "mq.1": "Product Manager",
+ "mq.2": "Pelari santai",
+ "mq.3": "Keyboard &amp; gitar",
+ "mq.4": "Anak komunitas",
+ "mq.5": "Banyak nanya",
+ "mq.6": "Tim es kopi",
+ "about.h": "Weekday aku beresin yang bikin ribet di app. Weekend-nya, kenalan sama orang baru.",
+ "about.p": "Sekarang aku Associate Product Manager di Fore Coffee, pegang growth dan retention di app konsumen. Sebelumnya aku di Glints, plus magang PM di Aruna dan Trans Retail. Aku paling cepat belajar kalau langsung nyoba, makanya sekarang punya keyboard, gitar, dan kebiasaan lari 5 km.",
+ "about.realnote": "Yang kartun itu AI. Ini aku yang asli, biar nggak ketipu.",
+ "work.h": "Dua udah rilis, satu masih diseduh, satu side project.",
+ "work.sub": "Tiap cerita isinya aku mutusin apa, kerja bareng siapa, dan habis itu gimana.",
+ "case.glints.k": "Glints · Jun 2024 sampai Jul 2025",
+ "case.glints.t": "Lebih sedikit langkah dari buka app sampai ngelamar.",
+ "case.glints.b": "Onboarding lebih pendek, saran posisi, dan One-Tap Apply di platform kandidat.",
+ "case.glints.s1": "onboarding selesai",
+ "case.glints.s2": "open-to-apply 1 hari",
+ "case.glints.s3": "lamaran per pelamar",
+ "case.fore.k": "Fore Coffee · Agu 2025 sampai sekarang",
+ "case.fore.t": "Bikin user baru betah, dengan biaya lebih hemat.",
+ "case.fore.b": "Rombak voucher user baru bareng tim promo, pangkas biaya login OTP, dan nyambungin TikTok Dining Go ke POS kami.",
+ "case.eta.k": "Fore Coffee",
+ "inprogress": "Lagi digarap",
+ "case.eta.t": "Pas kopimu lagi dibikin, app-nya enaknya ngomong apa?",
+ "case.eta.b": "Aku pegang sisi produk buat estimasi kopimu siap kapan. Modelnya dibikin tim BI. Belum rilis.",
+ "case.nandai.k": "Side project",
+ "ongoing": "Masih jalan",
+ "case.nandai.t": "NandAI, dua asisten AI dengan aturan mainku sendiri.",
+ "case.nandai.b": "Claude dan Codex pakai satu memori dan aturan yang sama. Bukti dulu, bilang kalau ragu, nggak ada yang dikirim tanpa OK dariku.",
+ "more": "Baca ceritanya",
+ "life.h": "Weekend-ku biasanya begini",
+ "life.sub": "Kebanyakan isinya kenalan sama orang asing atau keringetan dikit.",
+ "life.run.t": "Gym dan lari",
+ "life.run.p": "Sekitar 5 km, nggak pernah ngebut. Pelan, yang penting dateng.",
+ "life.music.t": "Keyboard dan gitar",
+ "life.music.p": "Main dua-duanya. Lagunya pop, tapi yang liriknya bikin mikir.",
+ "life.community.t": "Komunitas baru",
+ "life.community.p": "Hampir tiap weekend aku dateng ke komunitas yang isinya orang asing semua. Dari situ aku ketemu orang yang mikirnya beda dari aku.",
+ "life.metime.t": "Me time",
+ "life.metime.p": "Buku dan es kopi. Iya, aku tahu aku kerja di mana.",
+ "life.curious.t": "Lagi kepo soal",
+ "life.curious.p": "Plus tools AI apa pun yang baru rilis minggu ini.",
+ "aria.interests": "Minat",
+ "c.1": "Psikologi",
+ "c.2": "Sejarah",
+ "c.3": "Masak",
+ "c.4": "Fashion",
+ "c.5": "Tools AI",
+ "how.h": "Cara aku kerja bareng tim",
+ "how.1t": "Tanya dulu, kita mau mutusin apa.",
+ "how.1p": "Sebelum buka dashboard, aku mau tahu angkanya buat keputusan yang mana.",
+ "how.2t": "Cek layar aslinya.",
+ "how.2p": "Event di backend nggak nunjukin apa yang dilihat customer, jadi aku buka app-nya dan lihat sendiri.",
+ "how.3t": "Bilang kalau belum yakin.",
+ "how.3p": "Mending aku bilang dari awal ada yang belum jelas, daripada tim kaget pas mau rilis.",
+ "path.h": "Pernah di mana aja",
+ "now": "sekarang",
+ "path.1": "App konsumen. Growth, retention, dan pengalaman user dari awal sampai akhir.",
+ "path.2": "Platform kandidat. Onboarding dan alur sampai ngelamar.",
+ "path.3": "Operasional gudang. Discovery bareng stakeholder dan alat cek data.",
+ "path.4": "Sistem retur vendor dan manajemen pelanggan.",
+ "path.edu": "Teknologi Informasi, Politeknik Negeri Jakarta (2020 sampai 2024). Software Engineering, CCIT Universitas Indonesia (2020 sampai 2022).",
+ "contact.h": "Sapa <span class=\"hl-p\">aja.</span>",
+ "contact.p": "Lagi cari PM, lagi bikin sesuatu, atau punya rekomendasi komunitas buat aku cobain? Email aja.",
+ "contact.cta": "Kirim email",
+ "footer": "Ilustrasi dibuat dengan AI. Foto dan tulisannya punyaku.",
+ "alt.real": "Foto Nand tersenyum, pakai kemeja hitam",
+ "alt.run": "Ilustrasi Nand lagi lari",
+ "alt.guitar": "Ilustrasi Nand main gitar",
+ "alt.community": "Ilustrasi Nand makan bareng komunitas",
+ "alt.metime": "Ilustrasi Nand baca buku sambil ngopi",
+ "contact.cv": "Lihat CV-ku"
+}
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/globe.js" defer></script>
+  <script src="assets/js/motion.js" defer></script>
+</body>
+</html>
