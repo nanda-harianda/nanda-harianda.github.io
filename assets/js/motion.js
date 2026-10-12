@@ -96,6 +96,16 @@
     gsap.fromTo(img, { yPercent: 0 }, { yPercent: amt, ease: "none", scrollTrigger: { trigger: img.parentElement, start: "top bottom", end: "bottom top", scrub: true } });
   });
 
+  // Life cards: open up from a smaller rounded window while the image settles from a zoom.
+  gsap.utils.toArray(".lcard").forEach((card, i) => {
+    const img = card.querySelector(".img img");
+    const tl = gsap.timeline({ scrollTrigger: { trigger: card, start: "top 95%", end: "top 45%", scrub: 0.6 } });
+    tl.fromTo(card, { clipPath: "inset(14% 10% 14% 10% round 40px)", y: 60 }, { clipPath: "inset(0% 0% 0% 0% round 22px)", y: 0, ease: "none" }, 0);
+    if (img) tl.fromTo(img, { scale: 1.3 }, { scale: 1, ease: "none" }, 0);
+    const txt = card.querySelector(".txt");
+    if (txt) tl.fromTo(txt, { opacity: 0, x: i % 2 ? 30 : -30 }, { opacity: 1, x: 0, ease: "none" }, 0.35);
+  });
+
   // Work: pinned horizontal rail on wide screens, simple stagger on small ones.
   const mm = gsap.matchMedia();
   mm.add("(min-width: 901px)", () => {
@@ -105,13 +115,12 @@
       x: () => -dist(), ease: "none",
       scrollTrigger: { trigger: "#work-pin", start: "top top", end: () => "+=" + dist(), pin: true, scrub: 1, invalidateOnRefresh: true, anticipatePin: 1 },
     });
-    // Cards enter with a tilt as the rail arrives; cleared after so hover lift still works.
-    gsap.fromTo(".case", { rotate: 3, y: 40 }, { rotate: 0, y: 0, ease, duration: 1.2, stagger: 0.1, clearProps: "transform", scrollTrigger: { trigger: "#work-pin", start: "top 75%" } });
+    // Cards slide in from the right as the rail arrives (horizontal, like the rail itself).
+    gsap.fromTo(".case", { x: 220, opacity: 0 }, { x: 0, opacity: 1, ease, duration: 1.2, stagger: 0.12, clearProps: "transform", scrollTrigger: { trigger: "#work-pin", start: "top 75%" } });
   });
   mm.add("(max-width: 900px)", () => {
-    gsap.utils.toArray(".case").forEach((c) =>
-      gsap.fromTo(c, { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, ease, clearProps: "transform", scrollTrigger: { trigger: c, start: "top 88%" } })
-    );
+    // Phones: the rail is a swipeable carousel; cards just slide in from the right once.
+    gsap.fromTo(".case", { x: 120, opacity: 0 }, { x: 0, opacity: 1, duration: 1, ease, stagger: 0.1, clearProps: "transform", scrollTrigger: { trigger: "#work-pin", start: "top 85%" } });
   });
 
   // Marquee: always drifting, faster (and reversing) with scroll velocity.
