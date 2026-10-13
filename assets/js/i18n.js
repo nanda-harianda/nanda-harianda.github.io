@@ -29,7 +29,9 @@
     set(lang) {
       api.lang = lang === "id" ? "id" : "en";
       document.documentElement.lang = api.lang;
-      nodes.forEach((el) => {
+      // Re-query so cloned nodes (e.g. the duplicated marquee) switch too.
+      document.querySelectorAll("[data-i18n]").forEach((el) => {
+        if (el.dataset.en === undefined) el.dataset.en = el.innerHTML;
         const v = api.lang === "id" ? dict.id[el.dataset.i18n] : null;
         el.innerHTML = v || el.dataset.en;
       });

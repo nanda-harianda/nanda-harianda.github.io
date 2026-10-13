@@ -7,6 +7,7 @@
   const cards = [...inner.children];
   const n = cards.length;
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) return; // CSS shows a static grid instead
 
   // Points on a unit sphere. Squash the poles a little so cards don't pile up at top/bottom.
   const pts = cards.map((_, i) => {

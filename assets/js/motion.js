@@ -128,8 +128,13 @@
   if (mq) {
     mq.innerHTML += mq.innerHTML; // seamless loop
     let x = 0, dir = 1, boost = 0;
+    let held = false;
+    const strip = mq.parentElement;
+    ["mouseenter", "focusin"].forEach((ev) => strip.addEventListener(ev, () => (held = true)));
+    ["mouseleave", "focusout"].forEach((ev) => strip.addEventListener(ev, () => (held = false)));
     ScrollTrigger.create({ onUpdate: (self) => { dir = self.direction; boost = Math.min(Math.abs(self.getVelocity()) / 120, 12); } });
     gsap.ticker.add(() => {
+      if (held) return;
       const half = mq.scrollWidth / 2;
       x -= (0.6 + boost) * dir;
       boost *= 0.92;
