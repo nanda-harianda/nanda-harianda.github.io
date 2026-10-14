@@ -85,9 +85,9 @@ body::after {
 .hero h1 .line { display: block; overflow: hidden; padding-bottom: 0.06em; }
 .hero .sub { margin-top: 26px; font-size: clamp(18px, 2vw, 22px); color: var(--ink-2); max-width: 30ch; }
 .hero .ctas { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px; }
-.hero-blob { position: absolute; width: 60vmax; aspect-ratio: 1; border-radius: 50%; filter: blur(90px); opacity: 0.18; pointer-events: none; z-index: -1; }
-.hero-blob.y { background: var(--yellow); right: -20vmax; top: -10vmax; }
-.hero-blob.p { background: var(--pink); left: -25vmax; bottom: -30vmax; opacity: 0.14; }
+.hero-blob { position: absolute; width: 60vmax; aspect-ratio: 1; border-radius: 50%; opacity: 0.18; pointer-events: none; z-index: -1; }
+.hero-blob.y { background: radial-gradient(closest-side, var(--yellow), transparent); right: -20vmax; top: -10vmax; }
+.hero-blob.p { background: radial-gradient(closest-side, var(--pink), transparent); left: -25vmax; bottom: -30vmax; opacity: 0.14; }
 @media (max-width: 900px) { .hero .wrap { grid-template-columns: 1fr; } .hero { padding-top: 92px; } }
 
 /* Globe of me */
@@ -101,7 +101,7 @@ body::after {
 .globe::before { /* the planet core */
   content: ""; position: absolute; inset: 22%; border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--yellow) 55%, transparent), transparent 55%), radial-gradient(circle at 70% 75%, color-mix(in srgb, var(--pink) 45%, transparent), transparent 60%);
-  filter: blur(30px); opacity: 0.55;
+  opacity: 0.55;
 }
 .globe-inner { position: absolute; inset: 0; transform-style: preserve-3d; }
 .gcard {
@@ -500,3 +500,5 @@ details[open] > summary .mw-ic { transform: rotate(45deg); color: var(--yellow);
 .ph-signpost{--ph:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 256 256%22 fill=%22black%22%3E%3Cpath d=%22M246,106.65,212.33,69.3A16,16,0,0,0,200.44,64H136V32a8,8,0,0,0-16,0V64H40A16,16,0,0,0,24,80v64a16,16,0,0,0,16,16h80v64a8,8,0,0,0,16,0V160h64.44a16,16,0,0,0,11.89-5.3L246,117.35A8,8,0,0,0,246,106.65ZM200.44,144H40V80H200.44l28.8,32Z%22/%3E%3C/svg%3E")}
 .ph-plus{--ph:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 256 256%22 fill=%22black%22%3E%3Cpath d=%22M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z%22/%3E%3C/svg%3E")}
 picture{display:contents}
+/* Off-screen sections don't animate */
+.is-offscreen, .is-offscreen * { animation-play-state: paused !important; }
