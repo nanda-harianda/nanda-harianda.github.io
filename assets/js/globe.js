@@ -26,7 +26,7 @@
   measure();
 
   function frame() {
-    if (visible) {
+    if (visible && !document.hidden) {
       if (!dragging) {
         velY += (auto - velY) * 0.02; // ease back to cruising speed after a flick
         velX *= 0.94;
@@ -46,8 +46,9 @@
         const el = cards[i];
         el.style.transform = `translate3d(${x1 * radius}px, ${y2 * radius}px, 0) scale(${s})`;
         el.style.opacity = (0.25 + depth * 0.75).toFixed(3);
-        el.style.zIndex = String(Math.round(depth * 100));
-        el.style.filter = depth < 0.45 ? `blur(${((0.45 - depth) * 6).toFixed(1)}px)` : "none";
+        const z = Math.round(depth * 100);
+        if (el._z !== z) { el.style.zIndex = String(z); el._z = z; } // only restack when the order changes
+        // no per-frame blur: it forced every back card to repaint 60 times a second
       }
     }
     requestAnimationFrame(frame);

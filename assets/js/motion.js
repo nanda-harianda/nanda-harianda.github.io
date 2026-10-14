@@ -132,10 +132,12 @@
     const strip = mq.parentElement;
     ["mouseenter", "focusin"].forEach((ev) => strip.addEventListener(ev, () => (held = true)));
     ["mouseleave", "focusout"].forEach((ev) => strip.addEventListener(ev, () => (held = false)));
+    let half = mq.scrollWidth / 2, onScreen = true; // measured once, not every frame
+    new ResizeObserver(() => { half = mq.scrollWidth / 2; }).observe(mq);
+    new IntersectionObserver(([e]) => { onScreen = e.isIntersecting; }).observe(strip);
     ScrollTrigger.create({ onUpdate: (self) => { dir = self.direction; boost = Math.min(Math.abs(self.getVelocity()) / 120, 12); } });
     gsap.ticker.add(() => {
-      if (held) return;
-      const half = mq.scrollWidth / 2;
+      if (held || !onScreen) return;
       x -= (0.6 + boost) * dir;
       boost *= 0.92;
       if (x <= -half) x += half;
