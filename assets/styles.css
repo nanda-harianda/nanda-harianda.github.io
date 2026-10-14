@@ -145,7 +145,7 @@ body::after {
 .real:hover .sticker img { transform: translateX(-50%) translateY(-6px); }
 .sticker .blob { position: absolute; border-radius: 50%; z-index: 0; }
 .sticker .b1 { width: 78%; aspect-ratio: 1; background: var(--pink); left: 11%; top: 14%; }
-.sticker .b2 { width: 34%; aspect-ratio: 1; background: var(--bg); right: -8%; top: -6%; }
+.sticker .b2 { width: 22%; aspect-ratio: 1; background: transparent; border: 7px solid var(--bg); box-sizing: border-box; right: 7%; top: 5%; }
 .sticker .spark { position: absolute; z-index: 1; width: 22px; aspect-ratio: 1; background: var(--bg); clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); }
 .sticker .s1 { left: 8%; top: 10%; }
 .sticker .s2 { right: 12%; top: 46%; width: 16px; background: var(--ink); }
