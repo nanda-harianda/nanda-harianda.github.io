@@ -14,9 +14,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%230e0e0e%22/%3E%3Ctext x=%2212%22 y=%2246%22 font-family=%22Arial Black,Arial%22 font-weight=%22900%22 font-size=%2240%22 fill=%22%23ffd43b%22%3En%3C/text%3E%3Ccircle cx=%2250%22 cy=%2242%22 r=%225%22 fill=%22%23ff6fae%22/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap">
-  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
-  <link rel="stylesheet" href="assets/styles.css?v=8">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link rel="preload" as="style" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap"></noscript>
+  <link rel="stylesheet" href="assets/styles.css?v=9">
   <script>
     document.documentElement.classList.add("js");
     if (!matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("motion");
@@ -65,18 +66,18 @@
         <div class="globe-wrap">
           <div class="globe" id="globe" role="img" aria-label="A rotating globe of illustrations of Nand running, playing guitar and keyboard, working at a whiteboard, hiking with friends, at a community dinner, and reading with an iced coffee" data-i18n-aria="globe.aria">
             <div class="globe-inner" id="globe-inner">
-              <div class="gcard"><img src="assets/ai/run.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/run.avif" type="image/avif"><img decoding="async" src="assets/ai/run.jpg" alt="" width="900" height="900"></picture></div>
               <div class="gcard word y" data-i18n="g.w1">PM</div>
-              <div class="gcard"><img src="assets/ai/guitar.jpg" alt="" width="900" height="900"></div>
-              <div class="gcard"><img src="assets/ai/work.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/guitar.avif" type="image/avif"><img decoding="async" src="assets/ai/guitar.jpg" alt="" width="900" height="900"></picture></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/work.avif" type="image/avif"><img decoding="async" src="assets/ai/work.jpg" alt="" width="900" height="900"></picture></div>
               <div class="gcard word k" data-i18n="g.w2">Slow<br>runs</div>
-              <div class="gcard"><img src="assets/ai/hike.jpg" alt="" width="900" height="900"></div>
-              <div class="gcard"><img src="assets/ai/keys.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/hike.avif" type="image/avif"><img decoding="async" src="assets/ai/hike.jpg" alt="" width="900" height="900"></picture></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/keys.avif" type="image/avif"><img decoding="async" src="assets/ai/keys.jpg" alt="" width="900" height="900"></picture></div>
               <div class="gcard word p" data-i18n="g.w3">Curious</div>
-              <div class="gcard"><img src="assets/ai/community.jpg" alt="" width="900" height="900"></div>
-              <div class="gcard"><img src="assets/ai/metime.jpg" alt="" width="900" height="900"></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/community.avif" type="image/avif"><img decoding="async" src="assets/ai/community.jpg" alt="" width="900" height="900"></picture></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/metime.avif" type="image/avif"><img decoding="async" src="assets/ai/metime.jpg" alt="" width="900" height="900"></picture></div>
               <div class="gcard word y" data-i18n="g.w4">Keys &amp;<br>guitar</div>
-              <div class="gcard"><img src="assets/ai/hero.jpg" alt="" width="900" height="1117"></div>
+              <div class="gcard"><picture><source srcset="assets/ai/sm/hero.avif" type="image/avif"><img decoding="async" src="assets/ai/hero.jpg" alt="" width="900" height="1117"></picture></div>
               <div class="gcard word k" data-i18n="g.w5">New<br>faces</div>
               <div class="gcard word p" data-i18n="g.w6">Gets<br>done</div>
             </div>
@@ -105,7 +106,7 @@
           <div class="photo sticker">
             <span class="blob b1" aria-hidden="true"></span><span class="blob b2" aria-hidden="true"></span>
             <span class="spark s1" aria-hidden="true"></span><span class="spark s2" aria-hidden="true"></span><span class="spark s3" aria-hidden="true"></span>
-            <img src="assets/photos/portrait-cut.png" alt="Photo of Nand smiling, in a black shirt" data-i18n-alt="alt.real" width="565" height="900" loading="lazy">
+            <picture><source srcset="assets/photos/portrait-cut.avif" type="image/avif"><img decoding="async" src="assets/photos/portrait-cut.png" alt="Photo of Nand smiling, in a black shirt" data-i18n-alt="alt.real" width="565" height="900" loading="lazy"></picture>
           </div>
           <figcaption class="note" data-i18n="about.realnote">The drawings are AI. This one is the real me, for reference.</figcaption>
         </figure>
@@ -189,7 +190,7 @@
               </div>
               <span class="more"><span data-i18n="case.nandai.more">See how NandAI works</span> <i class="ph ph-arrow-right" aria-hidden="true"></i></span>
             </div>
-            <div class="mock mock--art" aria-hidden="true"><img class="art" src="assets/ai/work.jpg" alt="" width="900" height="900" loading="lazy"></div>
+            <div class="mock mock--art" aria-hidden="true"><picture><source srcset="assets/ai/sm/work.avif" type="image/avif"><img decoding="async" class="art" src="assets/ai/work.jpg" alt="" width="900" height="900" loading="lazy"></picture></div>
           </a>
         </div>
       </div>
@@ -209,19 +210,19 @@
         <p class="section-sub" data-reveal data-i18n="life.sub">Mostly meeting strangers, or getting a bit sweaty.</p>
         <div class="life-grid">
           <article class="lcard l-run">
-            <div class="img"><img src="assets/ai/run.jpg" alt="Illustration of Nand jogging" data-i18n-alt="alt.run" width="900" height="900" loading="lazy"></div>
+            <div class="img"><picture><source srcset="assets/ai/run.avif" type="image/avif"><img decoding="async" src="assets/ai/run.jpg" alt="Illustration of Nand jogging" data-i18n-alt="alt.run" width="900" height="900" loading="lazy"></picture></div>
             <div class="txt"><h3 data-i18n="life.run.t">Gym and running</h3><p data-i18n="life.run.p">Gym, plus slow runs of around 5 km. I’m never fast, but I keep showing up.</p></div>
           </article>
           <article class="lcard l-music">
-            <div class="img"><img src="assets/ai/guitar.jpg" alt="Illustration of Nand playing guitar" data-i18n-alt="alt.guitar" width="900" height="900" loading="lazy"></div>
+            <div class="img"><picture><source srcset="assets/ai/guitar.avif" type="image/avif"><img decoding="async" src="assets/ai/guitar.jpg" alt="Illustration of Nand playing guitar" data-i18n-alt="alt.guitar" width="900" height="900" loading="lazy"></picture></div>
             <div class="txt"><h3 data-i18n="life.music.t">Keys and guitar</h3><p data-i18n="life.music.p">I play both, mostly pop songs with lyrics that mean something.</p></div>
           </article>
           <article class="lcard l-community">
-            <div class="img"><img src="assets/ai/community.jpg" alt="Illustration of Nand at a community dinner" data-i18n-alt="alt.community" width="900" height="900" loading="lazy"></div>
+            <div class="img"><picture><source srcset="assets/ai/community.avif" type="image/avif"><img decoding="async" src="assets/ai/community.jpg" alt="Illustration of Nand at a community dinner" data-i18n-alt="alt.community" width="900" height="900" loading="lazy"></picture></div>
             <div class="txt"><h3 data-i18n="life.community.t">New communities</h3><p data-i18n="life.community.p">Most weekends I join a community where I don’t know anyone yet. That’s where I meet people who see things differently from me.</p></div>
           </article>
           <article class="lcard l-metime">
-            <div class="img"><img src="assets/ai/metime.jpg" alt="Illustration of Nand reading with an iced coffee" data-i18n-alt="alt.metime" width="900" height="900" loading="lazy"></div>
+            <div class="img"><picture><source srcset="assets/ai/metime.avif" type="image/avif"><img decoding="async" src="assets/ai/metime.jpg" alt="Illustration of Nand reading with an iced coffee" data-i18n-alt="alt.metime" width="900" height="900" loading="lazy"></picture></div>
             <div class="txt"><h3 data-i18n="life.metime.t">Me time</h3><p data-i18n="life.metime.p">Iced coffee and a slow afternoon. Yes, I know where I work.</p></div>
           </article>
           <article class="lcard l-curious">
